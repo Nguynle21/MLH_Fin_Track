@@ -1,3 +1,6 @@
-.heading {
-    background-color: lightsalmon
+.app {
+    min-height: 100vh;
+    background: var(--background-secondary);
+    display: flex;
+    flex-direction: column;
 }

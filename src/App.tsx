@@ -1,11 +1,20 @@
-import styles from './App.module.css'
+import { useState } from "react"
+import styles from "./App.module.css"
+
+type View = "dashboard" | "transactions" | "add";
 
 function App() {
-
+  const [currentView, setCurrentView] = useState<View>("dashboard");
+  
   return (
-    <h1 className={styles.heading}>
-      Finance Tracker
-    </h1>
+    <main className={styles.app}>
+      <nav className={styles.nav}>
+        <div className = {styles.navBrand}>
+          <span className={styles.logo}>💰</span>
+          <h1 className={styles.navTitle}>Finance Tracker</h1>
+        </div>
+      </nav>
+    </main>
   )
 }
 
